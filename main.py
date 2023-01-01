@@ -32,11 +32,5 @@ if st.button('Predict Price'):
     hdd = 1 if hdd == 'Yes' else 0
     ssd = 1 if ssd == 'Yes' else 0
     query = np.array([company, typename, ram, weight, touchscreen, ips, ppi, cpu, hdd, ssd, gpu, os])
-    print(query)
     query = query.reshape(1, 12)
-    print(query)
-<<<<<<< HEAD
-    st.title(np.exp(pipe.predict(query)[0]))
-=======
     st.title("The Predicted price is " + str(int(np.exp(pipe.predict(query)))))
->>>>>>> master
