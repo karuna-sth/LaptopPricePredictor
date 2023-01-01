@@ -35,4 +35,8 @@ if st.button('Predict Price'):
     print(query)
     query = query.reshape(1, 12)
     print(query)
+<<<<<<< HEAD
     st.title(np.exp(pipe.predict(query)[0]))
+=======
+    st.title("The Predicted price is " + str(int(np.exp(pipe.predict(query)))))
+>>>>>>> master

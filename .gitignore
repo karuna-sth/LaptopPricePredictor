@@ -1,2 +1,7 @@
 venv
+<<<<<<< HEAD
 .idea
+=======
+.idea
+.ipynb_checkpoints
+>>>>>>> master
